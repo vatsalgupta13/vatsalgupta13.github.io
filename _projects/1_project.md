@@ -1,15 +1,22 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Blockchain-based Electronic Medical Records (EMR) Management with OCR Assisted Summarization
+description: A decentralized application built with ReactJS, Flask, Solidity, and IPFS, that allows users to store and retrieve their medical records securely. The application has built-in OCR capabilities that enable users and their trusted doctors to analyze the uploaded reports by extracting critical medical terms, including disease names and prescribed drugs
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: Major
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The advantages of having a secure, immutable and decentralized Electronic Health Record (EHR) database:
+<ul>
+<li>Single version of the truth verified by the consensus of the participating hospitals</li>
+<li>Easy to share selective or all EHRs as consented by the patient</li>
+<li>Full medical history of a patient at one single point</li>
+<li>Easy verification of medical prescription</li>
+<li>Redacted EHRs for research purposes</li>
+<li>Increased transparency</li>
+<li>No insurance fraud</li>
+</ul>
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
