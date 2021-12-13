@@ -1,80 +1,34 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Data Mining For Spatio-Temporal Rules With Geospatial Analysis of Crime Patterns
+description: This project establishes a framework based on clustering and association rule mining to detect and analyze trends from temporal and spatial crime activity data. In this model, an open-source GIS application, QGIS, has been used to reveal crime hotspots, and a time series analysis has also been performed to analyze the changing patterns of crime with time.
+# img: assets/img/project_1.jpeg
+importance: 4
+category: Major
 ---
+<a href="https://github.com/vatsalgupta13/Inspector-Morse" target="_blank"><i class="fab fa-github"></i> Code</a> &nbsp; &nbsp;
+<a href="https://github.com/vatsalgupta13/Inspector-Morse/blob/main/Reports/Data%20Mining%20For%20Spatio-Temporal%20Rules%20With%20Geospatial%20Analysis%20of%20Crime%20Patterns%20-%20Minor%20Project%20Report.pdf" target="_blank"><i class="fa fa-book"></i> Project Report</a>
+<hr>
+<h5>Problem Statement</h5>
+Increased population, technological advancements and heightened competition for economic
+resources have created various social problems. Many of these changes in the human condition
+have brought new challenges to the doorstep of the law enforcement profession that begs for
+resolution. The major challenge facing law enforcement agencies is to deal with the increased
+number of criminal activities effectively and efficiently. Current policing strategies work towards finding the criminals, basically after the crime has occurred. However, with the help of
+technological advancement, we can use historical crime data to recognise crime patterns.
+If enforcement agencies have a prior assumption of the class of the crime, it would give them
+tactical advantages and help resolve cases faster. An overall study of criminal activity in a
+geographic area also helps in understanding the underlying pattern of the crime in that area
+<br>
+<h5>Project Objectives</h5>
+The primary objective of this work is to analyse criminal data based on demographics, spatial and temporal information and consequently identify useful crime patterns to aid police
+in preventing crimes. Towards this end, this project uses data mining and crime mapping
+techniques. The main objectives of this project are summarised as follows:
+<ol>
+<li>Identifying the crime patterns based on a criminal dataset that contains the geographical
+location and basic details of the criminal activity.</li>
+<li>Exploring data mining techniques to generate association rules for crime analysis.</li>
+<li>Visualising these patterns on an open source GIS software - QGIS for better understanding of the results.</li>
+</ol>
+<br>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/1.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/3.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

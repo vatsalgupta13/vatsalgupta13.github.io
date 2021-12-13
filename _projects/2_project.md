@@ -1,80 +1,34 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: Privacy-preserving Federated Learning Model For Email Spam Detection
+description: This project employs federated learning to classify emails as spam or not spam while ensuring user privacy. Initially, various machine learning and deep learning models were trained on a publicly available dataset, and the models with the best results (SVM & GRU) were applied in a federated environment. Later, the homomorphic encryption technique was added to offer a higher level of data confidentiality.
+# img: assets/img/project_2.png
 importance: 2
-category: work
+category: Major
 ---
+<a href="https://github.com/vatsalgupta13/Privacy-Preserving-Federated-Learning-Model-For-Email-Spam-Detection" target="_blank"><i class="fab fa-github"></i> Code</a> &nbsp; &nbsp;
+<a href="https://github.com/vatsalgupta13/Privacy-Preserving-Federated-Learning-Model-For-Email-Spam-Detection/blob/main/Final%20Report/Report%20-%20Minor%20Project%20II%20-%20Privacy-Preserving%20Federated%20Learning%20Model%20For%20Email%20Spam%20Detection.pdf" target="_blank"><i class="fa fa-book"></i> Project Report</a>
+<hr>
+<h5> Preface</h5>
+Over the past few years, machine learning has revolutionized fields such as computer vision, natural language processing, speech recognition, and email spam filtering. Much of this success is based on collecting vast amounts of data, often in privacy-invasive ways. Federated Learning is a new subfield of machine learning that allows training models without collecting the data itself. Instead of sharing data, users collaboratively train a model by only sending weight updates to a server. In this project, this technique has been applied to a very relevant domain - Email Spam Filtering. 
+<br>
+<h5>Project Objectives</h5>
+The primary objective of our work is to analyze the performance of existing machine learning
+algorithms in the domain of email spam filtering. We aim to evaluate several neural network
+techniques like simple Recurrent Neural Network (RNN), Long Short-Term Memory (LSTM),
+and Gated Recurrent Unit (GRU) along with traditional machine learning algorithms such as
+Logistic Regression, Decision Tree Classifier, Naive Bayes (NB), Support Vector Machine
+(SVM) classifier, and Random Forest Classifier. Among these, we choose the algorithms that
+yield the best result in email spam detection and then apply them in a federated environment.
+The main objectives of our project work are summarised as follows:
+<ol>
+<li>Applying several machine learning algorithms for the classification of emails as ham or
+spam.</li>
+<li>Providing a comparative analysis of the performance of these approaches.</li>
+<li>Applying two such approaches (with the best results) in a federated environment.</li>
+<li>Performing homomorphic encryption in the federated environment to ensure an even
+higher level of data security.</li>
+<li>Comparing the performance of machine learning algorithms when used with and without
+Federated Learning.</li>
+</ol>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/1.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/3.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Blockchain-based Electronic Medical Records (EMR) Management with OCR Assisted Summarization
-description: A decentralized application built with ReactJS, Flask, Solidity, and IPFS, that allows users to store and retrieve their medical records securely. The application has built-in OCR capabilities that enable users and their trusted doctors to analyze the uploaded reports by extracting critical medical terms, including disease names and prescribed drugs
-img: assets/img/12.jpg
+title: Blockchain-based Electronic Health Records (EHR) Management with OCR Assisted Summarization
+description: A decentralized application built with ReactJS, Flask, Solidity, and IPFS, that allows users to store and retrieve their medical records securely. The application has built-in OCR capabilities that enable users and their trusted doctors to analyze the uploaded reports by extracting critical medical terms, including disease names and prescribed drugs.
+# img: assets/img/project_1.jpeg
 importance: 1
 category: Major
 ---
-
+<a href="https://github.com/vatsalgupta13/Health-book" target="_blank"><i class="fab fa-github"></i> Code</a> &nbsp; &nbsp;
+<a href="https://github.com/vatsalgupta13/Health-book/blob/main/Reports/Major%20Project%20Report%20Vatsal%2017104060.pdf" target="_blank"><i class="fa fa-book"></i> Project Report</a>
+<hr>
 The advantages of having a secure, immutable and decentralized Electronic Health Record (EHR) database:
 <ul>
 <li>Single version of the truth verified by the consensus of the participating hospitals</li>
@@ -18,70 +20,24 @@ The advantages of having a secure, immutable and decentralized Electronic Health
 <li>No insurance fraud</li>
 </ul>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This application app has 2 main users:
+<ul>
+<li>Patients, who can:
+<ol type="a">
+<li>Upload a document to the blockchain. The document is added as a node in IPFS which returns a hash. The hash is then stored on the blockchain.</li>
+<li>View the uploaded documents.</li>
+<li>Analyse the uploaded documents. The text from the document is extracted and NER (Named Entity Recognition) is performed on the text using BERN (Biomedical Named Entity recognition and multi-type Normalization).</li>
+<li>Analyse their reports to find keywords related to Drugs or Diseases.</li>
+<li>Add a trusted doctor to view their medical documents.</li>
+</ol>
+</li>
+<li>Doctors, who can:
+<ol type="a">
+<li>Upload a medical document about a certain patient to the blockchain.</li>
+<li>View a certain patient's uploaded document.</li>
+</ol>
+</li>
+</ul>
+<br>
+{% responsive_image path: assets/img/project_1.png title: "example image" class: "img-fluid rounded z-depth-1" %}
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/1.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/3.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

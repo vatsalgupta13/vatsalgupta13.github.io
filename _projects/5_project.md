@@ -1,80 +1,28 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: AI-powered Real-Time Social Distance Monitoring System with Immutable Data Storage
+description: A robust model that uses advanced deep learning techniques (YOLO v2) to monitor social-distancing violations at any given place in real time. The model also uses a blockchain-based data integrity validation tool to remove the risk of data tampering.
+# img: assets/img/project_1.jpeg
+importance: 5
+category: Major
 ---
+<a href="https://github.com/vatsalgupta13/AI-powered-Real-Time-Social-Distance-Monitoring-System-with-Immutable-Data-Storage" target="_blank"><i class="fab fa-github"></i> Code</a> &nbsp; &nbsp;
+<a href="https://github.com/vatsalgupta13/AI-powered-Real-Time-Social-Distance-Monitoring-System-with-Immutable-Data-Storage/blob/main/Reports/Major%20Project%20Report%20-%2017104060.pdf" target="_blank"><i class="fa fa-book"></i> Project Report</a>
+<hr>
+<h5>Problem Statement</h5>
+To slow the spread of COVID-19, a tamper-proof, trustworthy, and privacy-enabled detection system is required to track and maintain social distancing. However, current systems in place lack consistent contact tracing, contain privacy concerns, and are vulnerable to corrupted data.
+<br>
+<h5>Solution</h5>
+This project establishes a social distancing detection model that records contact tracing data about certain locations with crowds, as well as distances between individuals. A blockchain-based data integrity validation tool has also been added to mitigate some of the concerns of with the use of AI technology, through a hybrid on and off-chain system. Information from this application is stored to a blockchain ledger to preserve data integrity and remove the risks of data tampering, or corruption. This data can be used for analytics to detect locations vulnerable to future outbreaks and enable swift action to enforce social-distancing guidelines in these areas.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h5>How it works</h5>
+<!-- <h6><b>1) Build Computer Vision Detector</b></h6>
+A YOLO detection model is proposed to accurately and consistently identify individuals not following social-distancing guidelines. The strictness of the guidelines can be adjusted accordingly.
+<h6><b>2) Incorporate Blockchain Storage</b></h6>
+The use of blockchain ledgers and smart contracts preserve the integrity of the data and allows for easy analysis of social distancing practices throughout different locations.
+<h6><b>3) Deploy and Monitor Social Distancing</b></h6>
+Deploying the detection model to video feed of webcams and record social distancing. The detections made by the model are flowing through the blockchain and good/bad distancing are recorded. -->
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/1.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/3.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+{% responsive_image path: assets/img/workflow.png title: "example image" class: "img-fluid rounded z-depth-1" %}
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% responsive_image path: assets/img/11.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
